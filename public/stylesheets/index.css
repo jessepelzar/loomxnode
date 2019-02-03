@@ -1,41 +1,27 @@
+html, body{
+  height: 100%;
+  font-family: 'QuicksandL', sans-serif;
+}
+
+@font-face {
+font-family: "QuicksandL";
+src: url("/fonts/Quicksand Light.otf");
+}
+
+
 .container {
   padding: 0 0 0 0;
   width: 100%;
-  position: relative;
-  overflow: hidden;
+  height: 100%;
+  position: absolute;
 }
 
-.topnav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-left: 10px;
-  width: 100%;
-  overflow: hidden;
-  background-color: #FFF;
-  height: 40px;
-}
 
-.topnav li {
-  float: left;
-}
-
-.topnav li a {
-    display: block;
-    color: #000;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 8pt;
-    padding: 15px 16px;
-    text-decoration: none;
-}
-
-ul li{
+/* ul li{
   padding: 0;
   margin: 0;
   list-style: none;
-}
+} */
 
 input[type=button] {
   background: none;
@@ -43,95 +29,89 @@ input[type=button] {
   border: none;
 }
 
-#section_one {
-  margin: 0;
-  width: 100%;
-  height: 60vh;
-  /*background-color: #cfcfcf;*/
+.section-1 {
+  /* height: inherit; */
+  /* height: 0;*/
+  /* padding-top: 54.66%; */
+  overflow: hidden;
+  background-image: url("/images/loomx_site_img1.png");
+  height: 100vh;
+  min-width: 100vw;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
+  font-family: 'QuicksandL', sans-serif;
+  font-weight:normal;
+  font-style:normal;
 }
 
-.title {
-  font-family: 'Raleway', sans-serif;
-  font-size: 10vw;
-  font-weight: 100;
-  text-align: center;
-  color: white;
-  margin: 0;
-  position: relative;
-  top: 34%;
-}
-
-#section_two {
-  width: 100%;
-  position: relative;
-  height: auto;
-}
-
-.background_image {
-  position: relative;
-  width: 100%;
-}
-
-about span{
+/* .topnav-container {
   position: absolute;
-  font-family: 'Roboto', sans-serif;
-  font-size: 3vw;
-  font-weight: 100;
-  color: white;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 1%;
-  top: 72%;
-  max-width: 40%;
-  text-align: left;
-  right: 20px;
-}
+  margin: 20px;
+  width: auto;
+} */
 
-#section_three {
-  width: 100%;
-  height: relative;
-  position: relative;
-}
-
-.ledTubes {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-
-h2 {
+.topnav {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20pt;
-  font-weight: 200;
-  color: Black;
-  margin: 0;
-  position: relative;
-  top: 34%;
-  padding-left: 2vw;
-  padding-bottom: 2vh;
+  overflow: hidden;
 }
 
-.text-box {
+.topnav ul {
+  list-style: none;
   margin: 0 auto;
+  padding: 0;
+  /* padding-left: 10px; */
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  height: 40px;
+  /* position: absolute; */
+}
+
+.topnav li {
+  display: inline;
+}
+
+.topnav a {
+    display: inline-block;
+    color: #000;
+
+    font-size: 12pt;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+.section-1 .caption {
+  position: absolute;
+  top: 45vh;
+  padding-left: 10%
+}
+.section-1 .caption-1 {
+  font-size: 7vw;
+}
+.section-1 .caption-2 {
+  font-size: 1.15vw;
+  padding-left: 3px;
+}
+
+.section-1 .button {
+  margin: 0 auto;
+  
+
   text-align: center;
-  vertical-align: middle;
 }
 
-p {
-
-  max-width: 60vw;
-  text-align: justify;
-
-  font-family: 'Raleway', sans-serif;
-  font-size: 15pt;
-  font-weight: 100;
-  color: Black;
-  margin: 0 auto;
+.section-2 {
+  padding: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+  /* display: run-in; */
   /* position: relative; */
-  top: 34%;
-  /* padding-left: 2vw; */
-  padding-top: 1vh;
-  padding-bottom: 2vh;
+  overflow: hidden;
+  background: url("/images/section-2-background.png");
+  /* background-position:  ; */
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
